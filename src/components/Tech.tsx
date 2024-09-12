@@ -7,9 +7,9 @@ const Tech = [
         href:"/javascript"
     },
     {
-        title:"hello",
+        title:"Github",
         imgsrc:"/logos/js.svg",
-        href:"/javascript"
+        href:"/github"
     },
     {
         title:"JavaScript",
@@ -38,7 +38,7 @@ const Tech = [
 const TechGrid = () => {
     return ( 
         <div className="flex flex-col gap-6 w-fit mx-auto">
-                <div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
+                <div className="grid gap-4 grid-cols-2 md:grid-cols-3">
                     {Tech.map((Tech) => (
                         <TechCard key={Tech.title} {...Tech}/>
                     ))}
